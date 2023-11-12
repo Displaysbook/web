@@ -1,13 +1,1 @@
-<canvas id="c" width="400" height="400" style="background:Black;display:block;margin:20px auto;"></canvas>
-<script>
-var s=[42,41],d=43,f=1,n,c=document.getElementById("c").getContext("2d");
-function dr(t,col){c.fillStyle=col;c.fillRect(t%20*20+1,~~(t/20)*20+1,18,18);}
-document.onkeydown=function(e){f=s[1]-s[0]==(n=[-1,-20,1,20][(e||event).keyCode-37]||f)?f:n;};
-!function(){
-s.unshift(n=s[0]+f);
-if(s.indexOf(n,1)>0||n<0||n>399||f==1&&n%20==0||f==-1&&n%20==19)return alert("GAME OVER");
-dr(n,"Lime");if(n==d){while(s.indexOf(d=~~(Math.random()*400))>=0);dr(d,"Yellow");}else dr(s.pop(),"Black");
-setTimeout(arguments.callee,130);
-}();
-</script>
-</body>
+
