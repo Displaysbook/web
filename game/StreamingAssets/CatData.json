@@ -1,0 +1,19 @@
+{
+    "catList": [
+        {
+            "catName": 99,
+            "isUnLock": true,
+            "isSelected": true
+        },
+        {
+            "catName": 99,
+            "isUnLock": false,
+            "isSelected": false
+        },
+        {
+            "catName": 99,
+            "isUnLock": false,
+            "isSelected": false
+        }
+    ]
+}
