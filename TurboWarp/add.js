@@ -1,0 +1,21 @@
+class HelloWorldExtension {
+    getInfo() {
+        return {
+            id: 'helloWorld',
+            name: 'Hello, World!',
+            blocks: [
+                {
+                    opcode: 'sayHello',
+                    blockType: Scratch.BlockType.COMMAND,
+                    text: 'say hello world',
+                },
+            ],
+        };
+    }
+
+    sayHello() {
+        console.log('Hello, world!');
+    }
+}
+
+Scratch.extensions.register(new HelloWorldExtension());
