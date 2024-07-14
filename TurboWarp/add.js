@@ -9,12 +9,24 @@ class HelloWorldExtension {
                     blockType: Scratch.BlockType.COMMAND,
                     text: 'say hello world',
                 },
+                {
+                    opcode: 'deleteClass',
+                    blockType: Scratch.BlockType.COMMAND,
+                    text: 'delete class [CLASS]',
+                },
             ],
         };
     }
 
     sayHello() {
         console.log('Hello, world!');
+    }
+
+    deleteClass(args) {
+        let elements = document.getElementsByClassName(args.CLASS);
+        while(elements.length > 0){
+            elements[0].parentNode.removeChild(elements[0]);
+        }
     }
 }
 
